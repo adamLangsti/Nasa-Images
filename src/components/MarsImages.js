@@ -18,7 +18,7 @@ const MarsImages = () => {
     }, []);
 
     return (
-        <div className="mars-images-container">
+        <div>
             {loading ? (
                 <p>Loading, please wait...</p>
             ) : (
@@ -26,7 +26,11 @@ const MarsImages = () => {
                     return (
                         <ul key={images.id}>
                             <li>
-                                <img src={images.img_src} alt='mars-images' />
+                                <img
+                                    src={images.img_src}
+                                    className='mars-images'
+                                    alt='mars-images'
+                                />
                                 <h2>{images.name.full_name}</h2>
                             </li>
                         </ul>

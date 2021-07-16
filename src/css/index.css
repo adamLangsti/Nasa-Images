@@ -1,4 +1,4 @@
-.mars-images-container > img {
+.mars-images {
   max-width: 600px;
   min-height: fit-content;
 }
