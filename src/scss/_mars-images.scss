@@ -1,0 +1,6 @@
+@import 'variables';
+
+.mars-images-container > img {
+  max-width: $image-width;
+  min-height: fit-content;
+}
