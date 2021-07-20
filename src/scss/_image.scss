@@ -1,0 +1,20 @@
+@import 'variables';
+
+.image-container {
+  list-style-type: none;
+  li {
+    padding: 1.5em;
+  }
+  img {
+    max-width: $image-width;
+  }
+  h1 {
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  h2,
+  p {
+    @extend h1;
+  }
+}

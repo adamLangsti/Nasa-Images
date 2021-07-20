@@ -1,6 +1,11 @@
 @import 'variables';
+@import 'mixin';
 
-.mars-images {
-  max-width: $image-width;
-  min-height: fit-content;
+.container {
+  @include flex-center(column);
+  max-width: $content-width;
+  margin: 0 auto;
+  h2 {
+    color: text-color(#fff);
+  }
 }

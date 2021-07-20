@@ -4,9 +4,9 @@ import MarsImages from './components/MarsImages';
 
 const App = () => {
     return (
-        <div className='container'>
+        <>
             <MarsImages />
-        </div>
+        </>
     );
 };
 

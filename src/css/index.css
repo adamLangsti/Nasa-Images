@@ -1,18 +1,37 @@
-.mars-images {
-  max-width: 600px;
-  min-height: fit-content;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container h2 {
+  color: #000;
+}
+
+.image-container {
+  list-style-type: none;
+}
+
+.image-container li {
+  padding: 1.5em;
+}
+
+.image-container img {
+  max-width: 30em;
+}
+
+.image-container h1, .image-container h2,
+.image-container p {
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-.container {
-  max-width: 1440px;
-}
-
-h2 {
-  color: #000;
 }
