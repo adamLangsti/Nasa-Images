@@ -7,8 +7,8 @@ const Pagination = ({ imagesPerPage, paginate, totalImages }) => {
     }
 
     return (
-        <nav>
-            <ul>
+        <nav className='pagination'>
+            <ul className='pagination-list'>
                 {pageNumbers.map((number, index) => {
                     return (
                         <li key={number}>

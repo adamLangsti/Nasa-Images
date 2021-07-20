@@ -5,6 +5,7 @@
   flex-direction: column;
   max-width: 1440px;
   margin: 0 auto;
+  margin-top: 7em;
 }
 
 .container h2 {
@@ -13,6 +14,8 @@
 
 .image-container {
   list-style-type: none;
+  display: flex;
+  align-items: center;
 }
 
 .image-container li {
@@ -20,7 +23,7 @@
 }
 
 .image-container img {
-  max-width: 30em;
+  max-width: 20em;
 }
 
 .image-container h1, .image-container h2,
@@ -28,6 +31,26 @@
   text-align: center;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+}
+
+.pagination {
+  margin-top: 6em;
+}
+
+.pagination-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.pagination a {
+  color: #2250f1;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 0.3em;
+}
+
+.pagination a:hover {
+  opacity: 0.6;
 }
 
 * {

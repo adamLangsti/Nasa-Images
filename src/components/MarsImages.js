@@ -7,7 +7,7 @@ const MarsImages = () => {
     const [nasaImages, setNasaImages] = useState([]);
     const [loading, setLoading] = useState(true);
     const [currentPage, setCurrentPage] = useState(1);
-    const [imagesPerPage] = useState(10);
+    const [imagesPerPage] = useState(5);
 
     const fetchNasaMarsImages = async () => {
         const response = await axios.get('http://localhost:5000/api');
@@ -27,7 +27,7 @@ const MarsImages = () => {
     const currentImage = nasaImages.slice(indexOfFirstImage, indexOfLastImage);
 
     // CHANGE PAGE
-    const paginate = (pageNumber) => {
+    const paginate = (pageNumber, event) => {
         setCurrentPage(pageNumber);
     };
 

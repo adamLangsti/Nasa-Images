@@ -5,6 +5,7 @@
   @include flex-center(column);
   max-width: $content-width;
   margin: 0 auto;
+  margin-top: 7em;
   h2 {
     color: text-color(#fff);
   }

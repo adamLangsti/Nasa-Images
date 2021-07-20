@@ -2,11 +2,13 @@
 
 .image-container {
   list-style-type: none;
+  display: flex;
+  align-items: center;
   li {
     padding: 1.5em;
   }
   img {
-    max-width: $image-width;
+    max-width: $image-width / 1.5;
   }
   h1 {
     text-align: center;
